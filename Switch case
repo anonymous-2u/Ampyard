@@ -1,0 +1,35 @@
+import java.util.*;
+public class Pixel_Shift
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int x,y;
+        x=4;
+        y=25;
+        System.out.print("The initial pixel position is ");
+        System.out.format("(%d,%d)%n", x, y); 
+        System.out.println("The input options are 1,2,3,4. Please choose your option.");
+        int n=sc.nextInt();
+        switch(n)
+        {
+            case 1:  x=x-n;
+                     System.out.print("The shifted pixel position is ");
+                     System.out.format("(%d,%d)%n", x, y);
+                     break;
+            case 2:  x=x+n;
+                     System.out.print("The shifted pixel position is ");
+                     System.out.format("(%d,%d)%n", x, y);
+                     break;
+            case 3:  y=y+n;
+                     System.out.print("The shifted pixel position is ");
+                     System.out.format("(%d,%d)%n", x, y);
+                     break;
+            case 4:  y=y-n;
+                     System.out.print("The shifted pixel position is ");
+                     System.out.format("(%d,%d)%n", x, y);
+                     break;
+            default: System.out.print("Please enter a valid choice");
+        }
+     }
+}
